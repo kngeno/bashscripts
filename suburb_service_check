@@ -1,0 +1,6 @@
+# /etc/cron.d/suburb_service_check: crontab fragment for suburb_service_check
+
+# Check that service runs ok and restart if not every minute
+* * * * *     root /usr/local/bin/suburb_service_check.sh >> /var/log/suburb_service_check 2>&1
+
+
